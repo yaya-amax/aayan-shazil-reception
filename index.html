@@ -165,6 +165,7 @@ section{margin:0 0 clamp(48px,9vw,88px)}
 .when{font-family:var(--caps); font-size:clamp(18px,3.8vw,25px); letter-spacing:.06em; line-height:1.6; font-weight:600; margin:0}
 .where{margin:clamp(20px,4vw,30px) 0 0; font-family:var(--caps); font-size:clamp(16px,3.4vw,22px); letter-spacing:.05em; line-height:1.6; font-weight:500}
 .where strong{display:block; font-weight:600; text-decoration:underline; text-decoration-color:var(--silver-2); text-underline-offset:5px; font-size:1.08em}
+.rsvp-by{margin:clamp(22px,4.5vw,32px) 0 0; font-family:var(--caps); font-size:clamp(14px,2.9vw,18px); letter-spacing:.14em; font-weight:600; color:var(--navy-2)}
 .reception{font-family:var(--script); font-size:clamp(44px,9vw,62px); margin:clamp(12px,3vw,20px) 0 clamp(4px,1vw,8px); line-height:1.1; color:var(--navy)}
 
 .heading{text-align:center; margin:0 0 clamp(22px,4vw,34px)}
@@ -206,6 +207,8 @@ section{margin:0 0 clamp(48px,9vw,88px)}
 .foot{text-align:center; font-family:var(--script); font-size:clamp(34px,7vw,48px); color:var(--on-dark); margin:20px 0 0}
 
 /* rsvp form */
+.reply-by{text-align:center; margin:0 0 22px; font-size:19px}
+.reply-by strong{font-weight:600; color:var(--navy)}
 .rsvp-form{display:grid; gap:18px; max-width:460px; margin:0 auto; text-align:left}
 .rsvp-form label,.rsvp-form legend{display:block; font-family:var(--caps); letter-spacing:.1em; font-size:15px; font-weight:600; color:var(--ink); margin:0 0 6px; padding:0}
 .rsvp-form fieldset{border:0; margin:0; padding:0; min-width:0}
@@ -396,6 +399,7 @@ section{margin:0 0 clamp(48px,9vw,88px)}
 
       <p class="when"><span data-k="dayLine"></span><br><span data-k="dateLine"></span><br><span data-k="timeLine"></span></p>
       <p class="where"><strong data-k="venue"></strong><span data-k="addr1"></span><br><span data-k="addr2"></span></p>
+      <p class="rsvp-by">Kindly RSVP by December 10, 2026</p>
     </section>
 
 
@@ -427,6 +431,7 @@ section{margin:0 0 clamp(48px,9vw,88px)}
     <section class="rv" id="rsvp" aria-labelledby="h-rsvp" hidden>
       <div class="heading"><h2 id="h-rsvp">Kindly Reply</h2><svg viewBox="0 0 240 24" aria-hidden="true"><use href="#flourish"/></svg></div>
       <div class="panel">
+        <p class="reply-by">Please reply by <strong>December 10, 2026</strong></p>
         <form class="rsvp-form" id="rsvp-form" novalidate>
           <div>
             <label for="f-name">Your Name</label>
